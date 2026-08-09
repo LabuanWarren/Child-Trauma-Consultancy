@@ -44,6 +44,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+::selection {
+  background: color-mix(in srgb, var(--color-orange) 20%, transparent);
+}
+
+::-moz-selection {
+  background: color-mix(in srgb, var(--color-orange) 20%, transparent);
+}
+
 img,
 svg {
   display: block;
