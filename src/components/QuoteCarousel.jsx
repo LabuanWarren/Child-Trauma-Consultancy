@@ -84,12 +84,26 @@ const useItemsPerView = () => {
   const [itemsPerView, setItemsPerView] = useState(3);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 1024px)');
-    const update = () => setItemsPerView(mediaQuery.matches ? 3 : 1);
+    const desktopQuery = window.matchMedia('(min-width: 1050px)');
+    const tabletQuery = window.matchMedia('(min-width: 744px)');
+
+    const update = () => {
+      if (desktopQuery.matches) {
+        setItemsPerView(3);
+      } else if (tabletQuery.matches) {
+        setItemsPerView(2);
+      } else {
+        setItemsPerView(1);
+      }
+    };
 
     update();
-    mediaQuery.addEventListener('change', update);
-    return () => mediaQuery.removeEventListener('change', update);
+    desktopQuery.addEventListener('change', update);
+    tabletQuery.addEventListener('change', update);
+    return () => {
+      desktopQuery.removeEventListener('change', update);
+      tabletQuery.removeEventListener('change', update);
+    };
   }, []);
 
   return itemsPerView;
@@ -149,6 +163,10 @@ const QuoteCarousel = () => {
     },
     [maxIndex],
   );
+
+  useEffect(() => {
+    setActiveIndex((current) => Math.min(current, maxIndex));
+  }, [maxIndex]);
 
   useEffect(() => {
     const viewport = viewportRef.current;

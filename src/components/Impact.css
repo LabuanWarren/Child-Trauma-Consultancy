@@ -107,17 +107,28 @@
     padding: 56px var(--panel-padding-x);
   }
 
+  .impact__table {
+    gap: 24px;
+  }
+
+  .impact__table-row--head {
+    display: none;
+  }
+
   .impact__table-row {
     grid-template-columns: 1fr;
     gap: 12px;
+    padding: 0;
+  }
+
+  .impact__table-row + .impact__table-row {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 0;
   }
 
   .impact__area {
     align-self: start;
-    text-align: left;
-  }
-
-  .impact__table-label {
     text-align: left;
   }
 }
