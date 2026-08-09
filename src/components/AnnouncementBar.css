@@ -34,7 +34,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  width: min(100%, 744px);
+  width: min(100%, var(--content-narrow-max));
   margin-inline: auto;
   overflow: hidden;
   border: 1px solid #000000;

@@ -66,7 +66,7 @@ const Footer = () => (
           <ul>
             {footerLinks.organizations.map((label) => (
               <li key={label}>
-                <a href="#who-we-serve">{label}</a>
+                <a href="/who-we-serve">{label}</a>
               </li>
             ))}
           </ul>
@@ -77,7 +77,7 @@ const Footer = () => (
           <ul>
             {footerLinks.services.map((label) => (
               <li key={label}>
-                <a href="#services">{label}</a>
+                <a href="/services">{label}</a>
               </li>
             ))}
           </ul>

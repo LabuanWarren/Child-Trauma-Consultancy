@@ -255,8 +255,8 @@ const Pathways = () => {
                   <img
                     src={pathway.heroImage}
                     alt={pathway.heroAlt}
-                    width={630}
-                    height={630}
+                    width={650}
+                    height={340}
                     loading="lazy"
                     decoding="async"
                   />

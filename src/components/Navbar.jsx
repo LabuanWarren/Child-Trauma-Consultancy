@@ -9,11 +9,11 @@ import './Navbar.css';
 const MotionDiv = motion.div;
 
 const navLinks = [
-  { name: 'Services', href: '#services' },
-  { name: 'Resources', href: '#resources' },
-  { name: 'Who We Serve', href: '#who-we-serve' },
-  { name: 'Why Us', href: '#why-us' },
-  { name: 'About', href: '#about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Resources', href: '/resources' },
+  { name: 'Who We Serve', href: '/who-we-serve' },
+  { name: 'Why Us', href: '/why-us' },
+  { name: 'About', href: '/about' },
 ];
 
 const Navbar = () => {
@@ -55,7 +55,7 @@ const Navbar = () => {
     >
       <div className="navbar__shell">
       <div className="navbar__inner">
-        <a href="#" className="navbar__brand" aria-label="Child Trauma Consultancy home">
+        <a href="/" className="navbar__brand" aria-label="Child Trauma Consultancy home">
           <Logo />
         </a>
 
