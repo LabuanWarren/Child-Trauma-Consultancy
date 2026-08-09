@@ -14,7 +14,8 @@
   --color-border: #000000;
 
   --section-padding-y: clamp(3rem, 8vw, 5rem);
-  --section-padding-x: clamp(1rem, 4vw, 2.5rem);
+  --section-padding-x: 40px;
+  --panel-padding-x: 40px;
   --container-max: 1400px;
   --content-narrow-max: 744px;
   --container-width: min(calc(100% - 2 * var(--section-padding-x)), var(--container-max));
@@ -208,6 +209,8 @@ p {
 
 @media (max-width: 1023px) {
   :root {
+    --section-padding-x: 16px;
+    --panel-padding-x: 16px;
     --h1-size: 56px;
     --h2-size: 32px;
     --h3-size: 22px;
@@ -216,6 +219,8 @@ p {
 
 @media (max-width: 767px) {
   :root {
+    --section-padding-x: 12px;
+    --panel-padding-x: 12px;
     --h1-size: 38px;
     --h2-size: 26px;
     --h3-size: 20px;

@@ -1,5 +1,5 @@
 .contact-section {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: linear-gradient(180deg, #faf9f5 0%, #ffffff 100%);
 }
 
@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
-  padding: 80px 40px 80px;
+  padding: 80px var(--panel-padding-x) 80px;
 }
 
 .contact-section__grid {
@@ -324,7 +324,7 @@ a.contact-info-card__detail:hover {
   }
 
   .contact-section__panel {
-    padding: 80px 24px 56px;
+    padding: 80px var(--panel-padding-x) 56px;
   }
 
   .contact-section__form-col {

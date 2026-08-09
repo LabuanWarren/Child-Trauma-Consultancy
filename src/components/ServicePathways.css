@@ -1,5 +1,5 @@
 .service-pathways {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: linear-gradient(180deg, #faf9f5 0%, #ffffff 100%);
 }
 
@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
-  padding: 80px 40px;
+  padding: 80px var(--panel-padding-x);
 }
 
 .service-pathways__inner {
@@ -183,7 +183,7 @@
   }
 
   .service-pathways__panel {
-    padding: 56px 24px;
+    padding: 56px var(--panel-padding-x);
   }
 
   .service-pathways__card {

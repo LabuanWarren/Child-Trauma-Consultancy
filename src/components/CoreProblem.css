@@ -1,6 +1,6 @@
 /* RpNSt — Core Problem section specs from ui.pen */
 .core-problem {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: #ffffff;
 }
 
@@ -9,7 +9,7 @@
   max-width: 1400px;
   margin-inline: auto;
   background: #ffffff;
-  padding: 80px 40px;
+  padding: 80px var(--panel-padding-x);
 }
 
 .core-problem__inner {
@@ -196,7 +196,7 @@
   }
 
   .core-problem__panel {
-    padding: 56px 24px;
+    padding: 56px var(--panel-padding-x);
   }
 
   .core-problem__visual {

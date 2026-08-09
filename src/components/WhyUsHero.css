@@ -1,5 +1,5 @@
 .why-us-hero {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: #faf9f5;
 }
 
@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
-  padding: 100px 40px;
+  padding: 100px var(--panel-padding-x);
 }
 
 .why-us-hero__inner {
@@ -62,7 +62,7 @@
 
 @media (max-width: 1023px) {
   .why-us-hero__panel {
-    padding: 80px 32px;
+    padding: 80px var(--panel-padding-x);
   }
 }
 
@@ -72,7 +72,7 @@
   }
 
   .why-us-hero__panel {
-    padding: 64px 24px;
+    padding: 64px var(--panel-padding-x);
   }
 
   .why-us-hero__inner {

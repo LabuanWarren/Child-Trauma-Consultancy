@@ -129,11 +129,11 @@
 
 @media (min-width: 691px) {
   .announcement {
-    padding-inline: 40px;
+    padding-inline: var(--section-padding-x);
   }
 
   .announcement--visible {
-    padding: 12px 40px 0;
+    padding: 12px var(--panel-padding-x) 0;
   }
 
   .announcement__card {

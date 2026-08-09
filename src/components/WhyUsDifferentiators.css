@@ -1,5 +1,5 @@
 .why-us-diff {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: linear-gradient(180deg, #faf9f5 0%, #ffffff 100%);
 }
 
@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
-  padding: 80px 40px;
+  padding: 80px var(--panel-padding-x);
 }
 
 .why-us-diff__inner {
@@ -93,7 +93,7 @@
   }
 
   .why-us-diff__panel {
-    padding: 56px 24px;
+    padding: 56px var(--panel-padding-x);
   }
 
   .why-us-diff__card {

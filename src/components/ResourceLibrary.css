@@ -1,5 +1,5 @@
 .resource-library {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: linear-gradient(180deg, #faf9f5 0%, #ffffff 100%);
 }
 
@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
-  padding: 80px 40px;
+  padding: 80px var(--panel-padding-x);
 }
 
 .resource-library__inner {
@@ -157,7 +157,7 @@
 .resource-library__empty {
   grid-column: 1 / -1;
   margin: 0;
-  padding: 48px 24px;
+  padding: 48px var(--panel-padding-x);
   border: 1px dashed #e2e2e2;
   border-radius: 12px;
   font-family: var(--font-body);
@@ -184,7 +184,7 @@
   }
 
   .resource-library__panel {
-    padding: 56px 24px;
+    padding: 56px var(--panel-padding-x);
   }
 
   .resource-library__filter-bar {

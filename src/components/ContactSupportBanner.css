@@ -1,5 +1,5 @@
 .contact-banner {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: #ffffff;
 }
 
@@ -7,14 +7,14 @@
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
-  padding: 0 40px 80px;
+  padding: 0 var(--panel-padding-x) 80px;
 }
 
 .contact-banner__inner {
   display: grid;
   gap: 24px;
   justify-items: center;
-  padding: 64px 40px;
+  padding: 64px var(--panel-padding-x);
   border-radius: 12px;
   background: #172b2a;
   color: #ffffff;
@@ -46,10 +46,10 @@
   }
 
   .contact-banner__panel {
-    padding: 0 24px 56px;
+    padding: 0 var(--panel-padding-x) 56px;
   }
 
   .contact-banner__inner {
-    padding: 48px 24px;
+    padding: 48px var(--panel-padding-x);
   }
 }

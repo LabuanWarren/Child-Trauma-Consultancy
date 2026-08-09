@@ -1,6 +1,6 @@
 /* bCMV7 — Contact CTA section specs from ui.pen */
 .contact-cta {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: #ffffff;
 }
 
@@ -21,7 +21,7 @@
   align-content: center;
   justify-items: center;
   min-height: 100dvh;
-  padding: 200px 40px;
+  padding: 200px var(--panel-padding-x);
   text-align: center;
 }
 
@@ -97,7 +97,7 @@
 
 @media (max-width: 1023px) {
   .contact-cta__inner {
-    padding: 120px 32px;
+    padding: 120px var(--panel-padding-x);
   }
 
   .contact-cta__decor {
@@ -112,7 +112,7 @@
   }
 
   .contact-cta__inner {
-    padding: 80px 24px;
+    padding: 80px var(--panel-padding-x);
   }
 
   .contact-cta__actions {

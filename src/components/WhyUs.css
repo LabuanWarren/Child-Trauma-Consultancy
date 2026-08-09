@@ -1,6 +1,6 @@
 /* TtxPm — Why Us section (layout aligned with Core Problem) */
 .why-us {
-  padding-inline: 40px;
+  padding-inline: var(--section-padding-x);
   background: #ffffff;
 }
 
@@ -9,7 +9,7 @@
   max-width: 1400px;
   margin-inline: auto;
   background: #ffffff;
-  padding: 80px 40px;
+  padding: 80px var(--panel-padding-x);
 }
 
 .why-us__inner {
@@ -211,7 +211,7 @@
   }
 
   .why-us__panel {
-    padding: 56px 24px;
+    padding: 56px var(--panel-padding-x);
   }
 
   .why-us__visual {

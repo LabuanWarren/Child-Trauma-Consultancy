@@ -1,5 +1,10 @@
 .footer {
   background: #faf9f5;
+  padding-inline: var(--section-padding-x);
+}
+
+.footer .container {
+  padding-inline: var(--panel-padding-x);
 }
 
 .footer__inner {
