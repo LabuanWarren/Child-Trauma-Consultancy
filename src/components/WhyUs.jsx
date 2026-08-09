@@ -69,10 +69,7 @@ const WhyUsStatic = () => (
         &amp; Lived Understanding
       </h2>
       <p className="why-us__description">
-        We don&apos;t teach trauma from an academic ivory tower. Founded by{' '}
-        <strong>Jaime Ramos</strong>, our work brings together lived experience of
-        childhood trauma with more than <strong>25 years</strong> of frontline
-        practice across child protection, out-of-home care, and community services.
+      Grounded in real life, not theory. <strong>Jaime Ramos</strong> brings lived experience and <strong>25+ years</strong> of frontline child protection expertise to every session.
       </p>
     </header>
 
@@ -143,10 +140,7 @@ const WhyUs = () => {
               >
                 <div className="why-us__expand-content">
                   <p className="why-us__description why-us__description--overlay">
-                    We don&apos;t teach trauma from an academic ivory tower. Founded by{' '}
-                    <strong>Jaime Ramos</strong>, our work brings together lived experience of
-                    childhood trauma with more than <strong>25 years</strong> of frontline
-                    practice across child protection, out-of-home care, and community services.
+                  Grounded in real life, not theory. <strong>Jaime Ramos</strong> brings lived experience and <strong>25+ years</strong> of frontline child protection expertise to every session.
                   </p>
                   <ValueCards />
                 </div>

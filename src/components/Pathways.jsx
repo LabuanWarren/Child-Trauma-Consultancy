@@ -194,9 +194,9 @@ const Pathways = () => {
         <header className="pathways__header">
           <p className="pathways__section-eyebrow">Two Distinct Ways We Support You</p>
           <h2 className="pathways__title" id="pathways-heading">
-            Select the pathway that
+            Select the Pathway That
             <br />
-            {' matches your needs:'}
+            {' Matches Your Needs:'}
           </h2>
         </header>
 
