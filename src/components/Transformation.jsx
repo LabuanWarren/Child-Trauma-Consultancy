@@ -10,21 +10,48 @@ import './Transformation.css';
 const diagrams = {
   before: {
     src: '/assets/transformation/gTNn8.webp',
+    mobileSrc: '/assets/transformation/DvKXa.webp',
     alt: 'Before transformation flow: challenging behaviour leads through misinterpretation and instinctive reaction to escalation and stress and harm.',
+    width: 1074,
+    height: 414,
+    mobileWidth: 390,
+    mobileHeight: 495,
   },
   after: {
     src: '/assets/transformation/dA0LJ.webp',
+    mobileSrc: '/assets/transformation/nGwMI.webp',
     alt: 'After transformation flow: challenging behaviour leads through recognising trauma signals and staff self-regulation to intentional response and safety and de-escalation.',
+    width: 1074,
+    height: 414,
+    mobileWidth: 390,
+    mobileHeight: 495,
   },
 };
 
 const SCROLL_SWITCH_POINT = 0.5;
+const MOBILE_DIAGRAM_QUERY = '(max-width: 1023px)';
+
+const useStackedDiagram = () => {
+  const [useStackedDiagramAssets, setUseStackedDiagramAssets] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(MOBILE_DIAGRAM_QUERY);
+    const update = () => setUseStackedDiagramAssets(mediaQuery.matches);
+
+    update();
+    mediaQuery.addEventListener('change', update);
+    return () => mediaQuery.removeEventListener('change', update);
+  }, []);
+
+  return useStackedDiagramAssets;
+};
 
 const Transformation = () => {
   const scrollStageRef = useRef(null);
   const diagramRef = useRef(null);
   const [activeTab, setActiveTab] = useState('before');
   const reduceMotion = useReducedMotion();
+  const useStackedLayout = useStackedDiagram();
 
   const { scrollYProgress } = useScroll({
     target: scrollStageRef,
@@ -128,19 +155,19 @@ const Transformation = () => {
               >
                 <img
                   className={activeTab === 'before' ? 'is-visible' : 'is-hidden'}
-                  src={diagrams.before.src}
+                  src={useStackedLayout ? diagrams.before.mobileSrc : diagrams.before.src}
                   alt={diagrams.before.alt}
-                  width={1074}
-                  height={414}
+                  width={useStackedLayout ? diagrams.before.mobileWidth : diagrams.before.width}
+                  height={useStackedLayout ? diagrams.before.mobileHeight : diagrams.before.height}
                   loading="lazy"
                   decoding="async"
                 />
                 <img
                   className={activeTab === 'after' ? 'is-visible' : 'is-hidden'}
-                  src={diagrams.after.src}
+                  src={useStackedLayout ? diagrams.after.mobileSrc : diagrams.after.src}
                   alt={diagrams.after.alt}
-                  width={1074}
-                  height={414}
+                  width={useStackedLayout ? diagrams.after.mobileWidth : diagrams.after.width}
+                  height={useStackedLayout ? diagrams.after.mobileHeight : diagrams.after.height}
                   loading="lazy"
                   decoding="async"
                 />

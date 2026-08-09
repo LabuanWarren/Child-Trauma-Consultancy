@@ -8668,7 +8668,6 @@
       "gap": 8,
       "padding": 24,
       "alignItems": "center",
-      "layoutIncludeStroke": true,
       "children": [
         {
           "type": "frame",
@@ -8691,7 +8690,6 @@
           "width": "fill_container",
           "layout": "vertical",
           "gap": 8,
-          "layoutIncludeStroke": true,
           "children": [
             {
               "type": "text",
@@ -8730,7 +8728,6 @@
           "width": "fill_container",
           "layout": "vertical",
           "gap": 8,
-          "layoutIncludeStroke": true,
           "children": [
             {
               "type": "text",
@@ -8758,6 +8755,716 @@
               "textAlignVertical": "middle",
               "fontFamily": "Lora",
               "fontSize": 24,
+              "fontWeight": "700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DvKXa",
+      "x": -1120,
+      "y": -916,
+      "name": "Before",
+      "clip": true,
+      "width": 390.0810546875,
+      "height": 495.0570068359375,
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "XRsFr",
+          "x": 88.51063537597656,
+          "y": 14.070632934570312,
+          "name": "Background",
+          "fill": "#000000ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "aO3xs",
+              "name": "Challenging Behaviour",
+              "fill": "#faf9f5ff",
+              "content": "Challenging Behaviour",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "d8nE0",
+          "x": 121.16424560546875,
+          "y": 102.3341293334961,
+          "name": "Background",
+          "fill": "#faf9f5ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "D4X2e5",
+              "name": "Misinterpretation",
+              "fill": "#000000ff",
+              "content": "Misinterpretation",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "W7rvS",
+          "x": 203.9872589111328,
+          "y": 207.5657958984375,
+          "name": "Background",
+          "fill": "#faf9f5ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "FIm3P",
+              "name": "Instinctive  Reaction",
+              "fill": "#000000ff",
+              "content": "Instinctive  Reaction",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ofBD9",
+          "x": 50.10176086425781,
+          "y": 308.96307373046875,
+          "name": "Background",
+          "fill": "#faf9f5ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "vHTQA",
+              "name": "Escalation",
+              "fill": "#000000ff",
+              "content": "Escalation",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qsrFq",
+          "x": 245.88523864746094,
+          "y": 384.11627197265625,
+          "name": "Background",
+          "fill": "#faf9f5ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "qqS2I",
+              "name": "Stress  & Harm",
+              "fill": "#000000ff",
+              "content": "Stress  & Harm",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "b4QRn",
+          "x": 188.3221893310547,
+          "y": 47.969120025634766,
+          "name": "Vector 1",
+          "rotation": -90.00000250447808,
+          "geometry": "M0 21c49 0 32.3-13.5 71.5-17.5l-6.06218-3.5m1.06218 9l5-5.5",
+          "width": 45.73069763183594,
+          "height": 13.43139362335205,
+          "stroke": "#000000ff",
+          "strokeWidth": 0.6395902037620544
+        },
+        {
+          "type": "path",
+          "id": "rXWM6",
+          "x": 279,
+          "y": 118,
+          "name": "Vector 8",
+          "geometry": "M0 0c110.0095 0 107.83167 101.14159 33.07895 112.3344l4.07791-4.19793m0.67936 6.75631l-4.75727-2.55838",
+          "width": 86.31275177001953,
+          "height": 114.89278411865234,
+          "stroke": "#000000ff",
+          "strokeWidth": 0.6395902037620544
+        },
+        {
+          "type": "path",
+          "id": "Va6qE",
+          "x": 194.9999237060547,
+          "y": 229.4747314453125,
+          "name": "Vector 9",
+          "flipX": true,
+          "geometry": "M0 4.02532c113.32632-21.47195 220.94478 48.10382 149.62172 87.1187l1.37828-5.11874m4.06699 6.398l-5.44527-1.27926",
+          "width": 172.56227111816406,
+          "height": 92.42327880859375,
+          "stroke": "#000000ff",
+          "strokeWidth": 0.6395902037620544
+        },
+        {
+          "type": "path",
+          "id": "T2yWsT",
+          "x": 158,
+          "y": 319.4420166015625,
+          "name": "Vector 10",
+          "geometry": "M0 2.14418c192.5-14.58608 251.5 48.91385 171.64064 79.66661l1.92752-7.10078m3.51775 8.38005l-5.44527-1.27927",
+          "width": 206.21505737304688,
+          "height": 83.0900650024414,
+          "stroke": "#000000ff",
+          "strokeWidth": 0.6395902037620544
+        },
+        {
+          "type": "frame",
+          "id": "HIppV",
+          "x": 124.06170654296875,
+          "y": 134.95297241210938,
+          "name": "Background",
+          "opacity": 0.05000000074505806,
+          "fill": "#fdc6bbff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "NHsog",
+              "name": "Recognise  Trauma Signal",
+              "fill": "#000000ff",
+              "content": "Recognise  Trauma Signal",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XviIU",
+          "x": 192.158447265625,
+          "y": 256.85626220703125,
+          "name": "Background",
+          "opacity": 0.05000000074505806,
+          "fill": "#a3d7c3ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "KAGc4",
+              "name": "Staff  Self-Regulation",
+              "fill": "#000000ff",
+              "content": "Staff  Self-Regulation",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "o44kpW",
+          "x": 50.10176086425781,
+          "y": 345.4195251464844,
+          "name": "Background",
+          "opacity": 0.05000000074505806,
+          "fill": "#a1e6ebff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "L9lZQV",
+              "name": "Intentional  Response",
+              "fill": "#000000ff",
+              "content": "Intentional  Response",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dVXSB",
+          "x": 208.7591094970703,
+          "y": 437.2909851074219,
+          "name": "Background",
+          "opacity": 0.05000000074505806,
+          "fill": "#dfc9e7ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "t0IGX",
+              "name": "Safety &  De-escalation",
+              "fill": "#000000ff",
+              "content": "Safety &  De-escalation",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nGwMI",
+      "x": -697,
+      "y": -916,
+      "name": "After",
+      "clip": true,
+      "width": 390.0810546875,
+      "height": 495.0570068359375,
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "IaIGq",
+          "x": 88.51063537597656,
+          "y": 14.070632934570312,
+          "name": "Background",
+          "fill": "#000000ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "M5l1Jp",
+              "name": "Challenging Behaviour",
+              "fill": "#faf9f5ff",
+              "content": "Challenging Behaviour",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AGrL7",
+          "x": 121.16424560546875,
+          "y": 102.3341293334961,
+          "name": "Background",
+          "opacity": 0.10000000149011612,
+          "fill": "#faf9f5ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "D8vFVN",
+              "name": "Misinterpretation",
+              "fill": "#000000ff",
+              "content": "Misinterpretation",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WPLT4",
+          "x": 203.9872589111328,
+          "y": 207.5657958984375,
+          "name": "Background",
+          "opacity": 0.10000000149011612,
+          "fill": "#faf9f5ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "OJ36F",
+              "name": "Instinctive  Reaction",
+              "fill": "#000000ff",
+              "content": "Instinctive  Reaction",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TzKiz",
+          "x": 50.10176086425781,
+          "y": 308.96307373046875,
+          "name": "Background",
+          "opacity": 0.10000000149011612,
+          "fill": "#faf9f5ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "A9BBK",
+              "name": "Escalation",
+              "fill": "#000000ff",
+              "content": "Escalation",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iRA7I",
+          "x": 245.88523864746094,
+          "y": 384.11627197265625,
+          "name": "Background",
+          "opacity": 0.10000000149011612,
+          "fill": "#faf9f5ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "gXJvh",
+              "name": "Stress  & Harm",
+              "fill": "#000000ff",
+              "content": "Stress  & Harm",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "mApan",
+          "x": 188.3221893310547,
+          "y": 47.969120025634766,
+          "name": "Vector 1",
+          "rotation": -90.00000250447808,
+          "geometry": "M0 21c49 0 32.3-13.5 71.5-17.5l-6.06218-3.5m1.06218 9l5-5.5",
+          "width": 45.73069763183594,
+          "height": 13.43139362335205,
+          "stroke": "#000000ff",
+          "strokeWidth": 0.6395902037620544
+        },
+        {
+          "type": "path",
+          "id": "IUIw0",
+          "x": 274.3691101074219,
+          "y": 156.27081298828125,
+          "name": "Vector 8",
+          "geometry": "M0 0c172 0 215.5 142.5 98.62402 159.99997l6.37581-4.99997m1.06218 9l-7.43799-4.00003",
+          "width": 104.98085021972656,
+          "height": 104.89278411865234,
+          "stroke": "#000000ff",
+          "strokeWidth": 0.6395902037620544
+        },
+        {
+          "type": "path",
+          "id": "wSU0b",
+          "x": 187.28631591796875,
+          "y": 276.0169982910156,
+          "name": "Vector 9",
+          "flipX": true,
+          "geometry": "M0 4.61807c95-17.99966 188.99731 20.19848 129.2081 52.90415l1.61581-3.21688m2.94889 4.28928l-4.5647-1.0724",
+          "width": 176.5116424560547,
+          "height": 69.89801025390625,
+          "stroke": "#000000ff",
+          "strokeWidth": 0.6395902037620544
+        },
+        {
+          "type": "path",
+          "id": "P11Qj",
+          "x": 167.00729370117188,
+          "y": 359.3990173339844,
+          "name": "Vector 10",
+          "geometry": "M0 3.00627c124.92536-16.08474 202.86916 35.75871 143.88419 75.16644l1.61581-5.95249m2.94888 7.02489l-4.56469-1.0724",
+          "width": 195.57887268066406,
+          "height": 94.53208923339844,
+          "stroke": "#000000ff",
+          "strokeWidth": 0.6395902037620544
+        },
+        {
+          "type": "frame",
+          "id": "KSdmq",
+          "x": 124.06170654296875,
+          "y": 134.95297241210938,
+          "name": "Background",
+          "fill": "#fdc6bbff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "b8555V",
+              "name": "Recognise  Trauma Signal",
+              "fill": "#000000ff",
+              "content": "Recognise  Trauma Signal",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p6ipq",
+          "x": 192.158447265625,
+          "y": 256.85626220703125,
+          "name": "Background",
+          "fill": "#a3d7c3ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "CYeZW",
+              "name": "Staff  Self-Regulation",
+              "fill": "#000000ff",
+              "content": "Staff  Self-Regulation",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "d34Ao",
+          "x": 50.10176086425781,
+          "y": 345.4195251464844,
+          "name": "Background",
+          "fill": "#a1e6ebff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "L9PcIG",
+              "name": "Intentional  Response",
+              "fill": "#000000ff",
+              "content": "Intentional  Response",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vyxuX",
+          "x": 208.7591094970703,
+          "y": 437.2909851074219,
+          "name": "Background",
+          "fill": "#dfc9e7ff",
+          "cornerRadius": 5.1167216300964355,
+          "gap": 5.1167216300964355,
+          "padding": [
+            5.1167216300964355,
+            10.233443260192871
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layoutIncludeStroke": true,
+          "children": [
+            {
+              "type": "text",
+              "id": "NEN1Y",
+              "name": "Safety &  De-escalation",
+              "fill": "#000000ff",
+              "content": "Safety &  De-escalation",
+              "lineHeight": 1.059999942779541,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Lora",
+              "fontSize": 15.350165367126465,
               "fontWeight": "700"
             }
           ]
