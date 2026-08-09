@@ -215,6 +215,12 @@ p {
     --h2-size: 32px;
     --h3-size: 22px;
   }
+
+  .hero__title br,
+  .impact__title br,
+  .pathways__title br {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
