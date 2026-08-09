@@ -3,8 +3,33 @@ import Button from './Button';
 import './AnnouncementBar.css';
 
 const STORAGE_KEY = 'ctc-announcement-dismissed';
+const REVEALED_KEY = 'ctc-announcement-revealed';
 const REVEAL_DELAY_MS = 2000;
 const TRANSITION_MS = 500;
+
+const revealState = {
+  hasRevealed:
+    typeof window !== 'undefined' &&
+    sessionStorage.getItem(REVEALED_KEY) === 'true',
+  timerId: null,
+  listeners: new Set(),
+};
+
+function scheduleReveal() {
+  if (revealState.hasRevealed || revealState.timerId !== null) return;
+
+  revealState.timerId = window.setTimeout(() => {
+    revealState.hasRevealed = true;
+    revealState.timerId = null;
+    sessionStorage.setItem(REVEALED_KEY, 'true');
+    revealState.listeners.forEach((listener) => listener(true));
+  }, REVEAL_DELAY_MS);
+}
+
+function subscribeReveal(listener) {
+  revealState.listeners.add(listener);
+  return () => revealState.listeners.delete(listener);
+}
 
 const CloseIcon = () => (
   <svg
@@ -23,10 +48,10 @@ const CloseIcon = () => (
 const AnnouncementBar = () => {
   const [isDismissed, setIsDismissed] = useState(() => {
     if (typeof window === 'undefined') return false;
-    localStorage.removeItem(STORAGE_KEY);
     return sessionStorage.getItem(STORAGE_KEY) === 'true';
   });
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(revealState.hasRevealed);
+  const [skipAnimation] = useState(revealState.hasRevealed);
   const [isMounted, setIsMounted] = useState(() => {
     if (typeof window === 'undefined') return true;
     return sessionStorage.getItem(STORAGE_KEY) !== 'true';
@@ -35,11 +60,13 @@ const AnnouncementBar = () => {
   useEffect(() => {
     if (isDismissed) return undefined;
 
-    const timer = window.setTimeout(() => {
+    if (revealState.hasRevealed) {
       setIsVisible(true);
-    }, REVEAL_DELAY_MS);
+      return undefined;
+    }
 
-    return () => window.clearTimeout(timer);
+    scheduleReveal();
+    return subscribeReveal(setIsVisible);
   }, [isDismissed]);
 
   const handleClose = () => {
@@ -56,7 +83,7 @@ const AnnouncementBar = () => {
 
   return (
     <section
-      className={`announcement${isVisible ? ' announcement--visible' : ''}`}
+      className={`announcement${isVisible ? ' announcement--visible' : ''}${skipAnimation ? ' announcement--instant' : ''}`}
       aria-label="Upcoming training sessions"
     >
       <div className="announcement__card">

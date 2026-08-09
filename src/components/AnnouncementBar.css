@@ -19,6 +19,10 @@
   padding: 12px var(--section-padding-x) 0;
 }
 
+.announcement--instant {
+  transition: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .announcement {
     transition: none;

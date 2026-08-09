@@ -2,6 +2,7 @@ import { lazy } from 'react';
 import Navbar from '../components/Navbar';
 import AnnouncementBar from '../components/AnnouncementBar';
 import Hero from '../components/Hero';
+import ScrollProgressButton from '../components/ScrollProgressButton';
 import Seo from '../components/Seo';
 import LazySection from '../components/LazySection';
 import { DEFAULT_DESCRIPTION, SITE_NAME, homeJsonLd } from '../utils/seo';
@@ -74,6 +75,8 @@ const Home = () => (
         <Footer />
       </LazySection>
     </main>
+
+    <ScrollProgressButton />
   </>
 );
 

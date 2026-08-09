@@ -1,6 +1,5 @@
 import { lazy } from 'react';
 import Navbar from '../components/Navbar';
-import AnnouncementBar from '../components/AnnouncementBar';
 import ContactHero from '../components/ContactHero';
 import ContactSection from '../components/ContactSection';
 import ContactSupportBanner from '../components/ContactSupportBanner';
@@ -23,7 +22,6 @@ const ContactPage = () => (
     </a>
 
     <Navbar />
-    <AnnouncementBar />
 
     <main id="main-content">
       <ContactHero />
