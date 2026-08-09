@@ -1,0 +1,214 @@
+/* RpNSt — Core Problem section specs from ui.pen */
+.core-problem {
+  padding-inline: 40px;
+  background: #ffffff;
+}
+
+.core-problem__panel {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  background: #ffffff;
+  padding: 80px 40px;
+}
+
+.core-problem__inner {
+  display: grid;
+  gap: 40px;
+}
+
+.core-problem__header {
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  text-align: center;
+}
+
+.core-problem__eyebrow {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.84px;
+  color: #282828;
+  text-transform: uppercase;
+}
+
+.core-problem__eyebrow--expand {
+  color: #ffffff;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.45);
+}
+
+.core-problem__title {
+  margin: 0;
+  max-width: 682px;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.06;
+  color: #000000;
+}
+
+.core-problem__description {
+  margin: 0;
+  max-width: 570px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.core-problem__scroll-stage {
+  width: 100%;
+}
+
+.core-problem__expand {
+  height: auto;
+}
+
+.core-problem__expand .scroll-expand__frame {
+  clip-path: inset(29% 0 29% 0 round 12px);
+}
+
+.core-problem__expand .scroll-expand__media {
+  object-position: center 26%;
+}
+
+.core-problem__expand .scroll-expand__stage {
+  top: var(--navbar-height);
+}
+
+.core-problem__expand-title {
+  flex-direction: column;
+  gap: 24px;
+  max-width: 682px;
+  margin-inline: auto;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+}
+
+.core-problem__expand-headline {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4.2vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.06;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.55);
+}
+
+.core-problem__expand-overlay {
+  justify-content: flex-end;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.core-problem__expand-content {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  max-width: 1320px;
+}
+
+.core-problem__description--overlay {
+  margin-inline: auto;
+  color: #ffffff;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.45);
+}
+
+.core-problem__body {
+  display: grid;
+  gap: 20px;
+}
+
+.core-problem__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.core-problem__card {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #faf9f5;
+  text-align: left;
+}
+
+.core-problem__card-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.core-problem__card-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.06;
+  color: #000000;
+}
+
+.core-problem__arrow {
+  flex-shrink: 0;
+  color: #000000;
+}
+
+.core-problem__card-copy {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #383838;
+}
+
+.core-problem__visual {
+  overflow: hidden;
+  height: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background: #faf9f5;
+}
+
+.core-problem__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 26%;
+}
+
+@media (max-width: 1023px) {
+  .core-problem__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .core-problem__title,
+  .core-problem__expand-headline {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .core-problem {
+    padding-inline: var(--section-padding-x);
+  }
+
+  .core-problem__panel {
+    padding: 56px 24px;
+  }
+
+  .core-problem__visual {
+    height: clamp(220px, 55vw, 400px);
+  }
+
+  .core-problem__expand-overlay {
+    padding: 1.25rem;
+  }
+}

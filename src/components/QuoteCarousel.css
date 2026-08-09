@@ -1,0 +1,239 @@
+.quote-carousel {
+  padding-inline: 40px;
+  background: #ffffff;
+}
+
+.quote-carousel__panel {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 80px 40px;
+  background: #ffffff;
+}
+
+.quote-carousel__header {
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.quote-carousel__eyebrow {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.84px;
+  color: #282828;
+  text-transform: uppercase;
+}
+
+.quote-carousel__title {
+  margin: 0 auto;
+  max-width: 682px;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.06;
+  color: #000000;
+}
+
+.quote-carousel__stage {
+  display: grid;
+  gap: 24px;
+}
+
+.quote-carousel__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.quote-carousel__track {
+  display: flex;
+  will-change: transform;
+}
+
+.quote-carousel__slide {
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.quote-carousel__card {
+  height: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  background: #faf9f5;
+  text-align: left;
+}
+
+.quote-carousel__blockquote {
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  height: 100%;
+}
+
+.quote-carousel__headline {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.quote-carousel__text {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #383838;
+}
+
+.quote-carousel__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.quote-carousel__avatar {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.quote-carousel__author-text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.quote-carousel__name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.quote-carousel__role {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #383838;
+}
+
+.quote-carousel__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.quote-carousel__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid #e2e2e2;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #282828;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.quote-carousel__arrow:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.quote-carousel__arrow:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.quote-carousel__dots {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.quote-carousel__dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: #d8d8d8;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.quote-carousel__dot:hover {
+  background: #a8a8a8;
+}
+
+.quote-carousel__dot--active {
+  background: #282828;
+  transform: scale(1.125);
+}
+
+.quote-carousel__dot:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+@media (max-width: 1023px) {
+  .quote-carousel__title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .quote-carousel {
+    padding-inline: var(--section-padding-x);
+  }
+
+  .quote-carousel__panel {
+    padding: 56px 24px;
+  }
+
+  .quote-carousel__header {
+    margin-bottom: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quote-carousel__track {
+    will-change: auto;
+  }
+
+  .quote-carousel__dot {
+    transition: none;
+  }
+}

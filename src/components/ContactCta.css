@@ -1,0 +1,134 @@
+/* bCMV7 — Contact CTA section specs from ui.pen */
+.contact-cta {
+  padding-inline: 40px;
+  background: #ffffff;
+}
+
+.contact-cta__panel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  background: #ffffff;
+}
+
+.contact-cta__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 40px;
+  align-content: center;
+  justify-items: center;
+  min-height: 100dvh;
+  padding: 200px 40px;
+  text-align: center;
+}
+
+.contact-cta__header {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+}
+
+.contact-cta__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.06;
+  color: #000000;
+}
+
+.contact-cta__description {
+  margin: 0 auto;
+  max-width: 430px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #383838;
+}
+
+.contact-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contact-cta__support {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #383838;
+}
+
+.contact-cta__support a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-cta__support a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.contact-cta__decor {
+  position: absolute;
+  bottom: 0;
+  width: min(384px, 42vw);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.contact-cta__decor--left {
+  left: 0;
+}
+
+.contact-cta__decor--right {
+  right: 0;
+}
+
+@media (max-width: 1023px) {
+  .contact-cta__inner {
+    padding: 120px 32px;
+  }
+
+  .contact-cta__decor {
+    width: min(280px, 38vw);
+    opacity: 0.85;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-cta {
+    padding-inline: var(--section-padding-x);
+  }
+
+  .contact-cta__inner {
+    padding: 80px 24px;
+  }
+
+  .contact-cta__title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+
+  .contact-cta__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-cta__actions .btn {
+    width: 100%;
+  }
+
+  .contact-cta__decor {
+    width: min(220px, 46vw);
+  }
+}

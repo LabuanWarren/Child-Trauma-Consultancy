@@ -1,0 +1,21 @@
+.scroll-reveal {
+  margin: 0;
+}
+
+.scroll-reveal--inline {
+  display: inline;
+}
+
+.scroll-reveal-text {
+  display: inline;
+}
+
+.scroll-reveal-text .word {
+  display: inline-block;
+}
+
+.scroll-reveal--block {
+  display: block;
+  width: 100%;
+  height: fit-content;
+}

@@ -1,0 +1,127 @@
+/* uGlYS — Impact section specs from ui.pen */
+.impact {
+  padding-inline: 40px;
+  background: #ffffff;
+}
+
+.impact__panel {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 80px 40px;
+  background: #ffffff;
+}
+
+.impact__inner {
+  display: grid;
+  gap: 40px;
+}
+
+.impact__header {
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  text-align: center;
+}
+
+.impact__eyebrow {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.84px;
+  color: #282828;
+  text-transform: uppercase;
+}
+
+.impact__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.06;
+  color: #000000;
+}
+
+.impact__table {
+  display: grid;
+  gap: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #faf9f5;
+}
+
+.impact__table-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  padding: 8px 16px;
+}
+
+.impact__table-row + .impact__table-row {
+  margin-top: 20px;
+  border-top: 1px solid #e2e2e2;
+  padding-top: 20px;
+}
+
+.impact__table-label {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #000000;
+  text-align: left;
+}
+
+.impact__area {
+  align-self: end;
+  max-width: 360px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.06;
+  color: #000000;
+  text-align: left;
+}
+
+.impact__result {
+  margin: 0;
+  align-self: center;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000000;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .impact {
+    padding-inline: var(--section-padding-x);
+  }
+
+  .impact__panel {
+    padding: 56px 24px;
+  }
+
+  .impact__title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+
+  .impact__table-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .impact__area {
+    align-self: start;
+    text-align: left;
+  }
+
+  .impact__table-label {
+    text-align: left;
+  }
+}
