@@ -48,6 +48,7 @@
   font-weight: 500;
   line-height: 1.12;
   color: #000000;
+  text-wrap: pretty;
 }
 
 .about-hero__description {

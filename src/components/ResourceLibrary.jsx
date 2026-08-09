@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
 import Button from './Button';
-import ScrollReveal from './ScrollReveal';
 import './ResourceLibrary.css';
 
 const HERO_VIDEO_ID = 'pIXCyz50rZc';
@@ -122,9 +121,7 @@ const ResourceLibrary = () => {
                     className="resource-library__title"
                     id={`resource-${resource.id}-title`}
                   >
-                    <ScrollReveal inline baseRotation={1.5} blurStrength={3}>
-                      {resource.title}
-                    </ScrollReveal>
+                    {resource.title}
                   </h2>
 
                   <p className="resource-library__description">

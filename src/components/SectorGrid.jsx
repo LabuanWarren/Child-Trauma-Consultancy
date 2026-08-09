@@ -1,5 +1,4 @@
 import Button from './Button';
-import ScrollReveal from './ScrollReveal';
 import './SectorGrid.css';
 
 const sectors = [
@@ -71,9 +70,7 @@ const SectorGrid = () => (
                 className="sector-grid__headline"
                 id={`sector-${sector.id}-headline`}
               >
-                <ScrollReveal inline baseRotation={1.5} blurStrength={3}>
-                  {sector.headline}
-                </ScrollReveal>
+                {sector.headline}
               </h3>
 
               <p className="sector-grid__body">{sector.body}</p>

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useLenis } from 'lenis/react';
 import Logo from './Logo';
@@ -61,14 +61,16 @@ const Navbar = () => {
 
         <div className="navbar__links" role="list">
           {navLinks.map((link) => (
-            <Link
+            <NavLink
               key={link.name}
               to={link.href}
-              className="navbar__link"
+              className={({ isActive }) =>
+                `navbar__link${isActive ? ' navbar__link--active' : ''}`
+              }
               role="listitem"
             >
-              {link.name}
-            </Link>
+              <div className="navbar__link-pill">{link.name}</div>
+            </NavLink>
           ))}
         </div>
 
@@ -101,14 +103,16 @@ const Navbar = () => {
             transition={{ duration: 0.25 }}
           >
             {navLinks.map((link) => (
-              <Link
+              <NavLink
                 key={link.name}
                 to={link.href}
-                className="navbar__mobile-link"
+                className={({ isActive }) =>
+                  `navbar__mobile-link${isActive ? ' navbar__mobile-link--active' : ''}`
+                }
                 onClick={closeMobileMenu}
               >
-                {link.name}
-              </Link>
+                <div className="navbar__link-pill">{link.name}</div>
+              </NavLink>
             ))}
             <Button
               to="/contact"

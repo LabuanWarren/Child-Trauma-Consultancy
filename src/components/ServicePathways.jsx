@@ -1,5 +1,4 @@
 import Button from './Button';
-import ScrollReveal from './ScrollReveal';
 import './ServicePathways.css';
 
 const pathways = [
@@ -76,9 +75,7 @@ const ServicePathways = () => (
                 className="service-pathways__headline"
                 id={`service-pathway-${pathway.id}-headline`}
               >
-                <ScrollReveal inline baseRotation={1.5} blurStrength={3}>
-                  {pathway.headline}
-                </ScrollReveal>
+                {pathway.headline}
               </h3>
 
               <p className="service-pathways__body">{pathway.body}</p>
