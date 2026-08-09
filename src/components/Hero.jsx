@@ -22,7 +22,7 @@ const Hero = () => {
               <h1 className="hero__title" id="hero-title">
                 Know What to Do
                 <br />
-                When Trauma Shows Up
+                {' When Trauma Shows Up'}
               </h1>
               <p className="hero__description">
                 We bridge the gap between understanding trauma conceptually and

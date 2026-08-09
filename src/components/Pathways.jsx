@@ -196,7 +196,7 @@ const Pathways = () => {
           <h2 className="pathways__title" id="pathways-heading">
             Select the pathway that
             <br />
-            matches your needs:
+            {' matches your needs:'}
           </h2>
         </header>
 

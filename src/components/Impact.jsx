@@ -35,7 +35,7 @@ const Impact = () => (
           <h2 className="impact__title" id="impact-title">
             What Happens When Your
             <br />
-            Team Learns to Respond:
+            {' Team Learns to Respond:'}
           </h2>
         </header>
 
