@@ -75,7 +75,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar__actions">
-          <Button to="/contact" variant="primary" size="sm">
+          <Button to="/contact" variant="primary" size="sm" icon={false}>
             Reach Out
           </Button>
         </div>
@@ -118,6 +118,7 @@ const Navbar = () => {
               to="/contact"
               variant="primary"
               size="sm"
+              icon={false}
               onClick={closeMobileMenu}
             >
               Reach Out

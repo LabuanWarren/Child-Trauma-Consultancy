@@ -19,29 +19,31 @@ const Button = ({
   to,
   variant = 'primary',
   size = 'md',
+  icon = true,
   className = '',
   ...props
 }) => {
+  const showIcon = variant === 'primary' && icon;
   const classes = [
     'btn',
     `btn--${variant}`,
     size === 'sm' ? 'btn--sm' : '',
+    variant === 'primary' && !icon ? 'btn--no-icon' : '',
     className,
   ]
     .filter(Boolean)
     .join(' ');
 
-  const content =
-    variant === 'primary' ? (
-      <>
-        <span className="btn__label">{children}</span>
-        <span className="btn__icon">
-          <ArrowIcon />
-        </span>
-      </>
-    ) : (
-      children
-    );
+  const content = showIcon ? (
+    <>
+      <span className="btn__label">{children}</span>
+      <span className="btn__icon">
+        <ArrowIcon />
+      </span>
+    </>
+  ) : (
+    children
+  );
 
   if (to) {
     return (
