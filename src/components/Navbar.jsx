@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useLenis } from 'lenis/react';
 import Logo from './Logo';
 import Button from './Button';
-import { EMAIL } from '../utils/seo';
 import './Navbar.css';
 
 const MotionDiv = motion.div;
@@ -74,7 +73,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar__actions">
-          <Button href={`mailto:${EMAIL}`} variant="primary" size="sm">
+          <Button to="/contact" variant="primary" size="sm">
             Reach Out
           </Button>
         </div>
@@ -112,7 +111,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Button
-              href={`mailto:${EMAIL}`}
+              to="/contact"
               variant="primary"
               size="sm"
               onClick={closeMobileMenu}

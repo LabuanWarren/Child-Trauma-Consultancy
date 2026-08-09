@@ -7,6 +7,7 @@ import Resources from './pages/Resources';
 import WhoWeServe from './pages/WhoWeServe';
 import WhyUsPage from './pages/WhyUsPage';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/who-we-serve" element={<WhoWeServe />} />
           <Route path="/why-us" element={<WhyUsPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </SmoothScroll>
     </BrowserRouter>

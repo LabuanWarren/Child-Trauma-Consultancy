@@ -1,0 +1,55 @@
+.contact-banner {
+  padding-inline: 40px;
+  background: #ffffff;
+}
+
+.contact-banner__panel {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 0 40px 80px;
+}
+
+.contact-banner__inner {
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  padding: 64px 40px;
+  border-radius: 12px;
+  background: #172b2a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-banner__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 500;
+  line-height: 1.06;
+  color: #ffffff;
+}
+
+.contact-banner__subtitle {
+  margin: 0;
+  max-width: 560px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 767px) {
+  .contact-banner {
+    padding-inline: var(--section-padding-x);
+  }
+
+  .contact-banner__panel {
+    padding: 0 24px 56px;
+  }
+
+  .contact-banner__inner {
+    padding: 48px 24px;
+  }
+}

@@ -155,3 +155,19 @@ export const aboutPageJsonLd = {
     },
   },
 };
+
+export const contactPageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact',
+  url: `${SITE_URL}/contact`,
+  description:
+    'Get in touch for tailored trauma-informed training, workplace diagnostics, or expert witness assessments.',
+  mainEntity: {
+    '@type': 'ProfessionalService',
+    name: SITE_NAME,
+    email: EMAIL,
+    telephone: PHONE,
+    areaServed: ['AU', 'International'],
+  },
+};
