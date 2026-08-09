@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { EMAIL, PHONE } from '../utils/seo';
 import './Footer.css';
@@ -66,7 +67,7 @@ const Footer = () => (
           <ul>
             {footerLinks.organizations.map((label) => (
               <li key={label}>
-                <a href="/who-we-serve">{label}</a>
+                <Link to="/who-we-serve">{label}</Link>
               </li>
             ))}
           </ul>
@@ -77,7 +78,7 @@ const Footer = () => (
           <ul>
             {footerLinks.services.map((label) => (
               <li key={label}>
-                <a href="/services">{label}</a>
+                <Link to="/services">{label}</Link>
               </li>
             ))}
           </ul>

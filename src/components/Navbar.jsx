@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useLenis } from 'lenis/react';
 import Logo from './Logo';
@@ -55,20 +56,20 @@ const Navbar = () => {
     >
       <div className="navbar__shell">
       <div className="navbar__inner">
-        <a href="/" className="navbar__brand" aria-label="Child Trauma Consultancy home">
+        <Link to="/" className="navbar__brand" aria-label="Child Trauma Consultancy home">
           <Logo />
-        </a>
+        </Link>
 
         <div className="navbar__links" role="list">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="navbar__link"
               role="listitem"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -101,14 +102,14 @@ const Navbar = () => {
             transition={{ duration: 0.25 }}
           >
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="navbar__mobile-link"
                 onClick={closeMobileMenu}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <Button
               href={`mailto:${EMAIL}`}
