@@ -44,7 +44,7 @@
   margin: 0;
   max-width: 682px;
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: var(--h2-size);
   font-weight: 500;
   line-height: 1.06;
   color: #000000;
@@ -93,7 +93,7 @@
 .core-problem__expand-headline {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 4.2vw, 2.5rem);
+  font-size: var(--h2-size);
   font-weight: 500;
   line-height: 1.06;
   color: #ffffff;
@@ -148,7 +148,7 @@
 .core-problem__card-title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: var(--h3-size);
   font-weight: 700;
   line-height: 1.06;
   color: #000000;
@@ -187,11 +187,6 @@
 @media (max-width: 1023px) {
   .core-problem__cards {
     grid-template-columns: 1fr;
-  }
-
-  .core-problem__title,
-  .core-problem__expand-headline {
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
   }
 }
 

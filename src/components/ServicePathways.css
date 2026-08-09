@@ -37,7 +37,7 @@
   margin: 0;
   max-width: 682px;
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: var(--h2-size);
   font-weight: 500;
   line-height: 1.06;
   color: #000000;
@@ -116,7 +116,7 @@
 .service-pathways__headline {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: var(--h3-size);
   font-weight: 700;
   line-height: 1.06;
   color: #000000;

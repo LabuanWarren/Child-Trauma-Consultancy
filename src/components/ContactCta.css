@@ -34,7 +34,7 @@
 .contact-cta__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: var(--h2-size);
   font-weight: 500;
   line-height: 1.06;
   color: #000000;
@@ -113,10 +113,6 @@
 
   .contact-cta__inner {
     padding: 80px 24px;
-  }
-
-  .contact-cta__title {
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
   }
 
   .contact-cta__actions {

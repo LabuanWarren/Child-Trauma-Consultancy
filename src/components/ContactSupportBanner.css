@@ -24,7 +24,7 @@
 .contact-banner__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-size: var(--h2-size);
   font-weight: 500;
   line-height: 1.06;
   color: #ffffff;

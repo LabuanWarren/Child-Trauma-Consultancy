@@ -34,7 +34,7 @@
   margin: 0 auto;
   max-width: 682px;
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: var(--h2-size);
   font-weight: 500;
   line-height: 1.06;
   color: #000000;
@@ -206,12 +206,6 @@
 .quote-carousel__dot:focus-visible {
   outline: 2px solid #000000;
   outline-offset: 2px;
-}
-
-@media (max-width: 1023px) {
-  .quote-carousel__title {
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
-  }
 }
 
 @media (max-width: 767px) {

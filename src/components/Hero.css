@@ -38,7 +38,7 @@
 .hero__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 72px;
+  font-size: var(--h1-size);
   font-weight: 500;
   line-height: 1.06;
   color: #000000;
@@ -137,10 +137,6 @@
 
   .hero__inner {
     gap: 56px;
-  }
-
-  .hero__title {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
   }
 
   .hero__decor-image {

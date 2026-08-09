@@ -44,7 +44,7 @@
 .who-we-serve-hero__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-size: var(--h1-size);
   font-weight: 500;
   line-height: 1.06;
   color: #000000;

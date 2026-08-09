@@ -38,7 +38,7 @@
 .impact__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: var(--h2-size);
   font-weight: 500;
   line-height: 1.06;
   color: #000000;
@@ -80,7 +80,7 @@
   padding: 12px 16px;
   border-radius: 8px;
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: var(--h3-size);
   font-weight: 700;
   line-height: 1.06;
   color: #000000;
@@ -105,10 +105,6 @@
 
   .impact__panel {
     padding: 56px 24px;
-  }
-
-  .impact__title {
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
   }
 
   .impact__table-row {
