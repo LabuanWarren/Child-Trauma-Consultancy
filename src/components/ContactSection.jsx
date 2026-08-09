@@ -292,26 +292,6 @@ const ContactSection = () => {
           </div>
 
           <aside className="contact-section__info-col" aria-label="Direct contact channels">
-            <div className="contact-info-card">
-              <h3 className="contact-info-card__title">Direct Email</h3>
-              <a className="contact-info-card__detail" href={`mailto:${EMAIL}`}>
-                {EMAIL}
-              </a>
-              <p className="contact-info-card__subtext">
-                Best for legal document submissions, formal RFPs, or direct inquiries.
-              </p>
-            </div>
-
-            <div className="contact-info-card">
-              <h3 className="contact-info-card__title">Service Areas</h3>
-              <p className="contact-info-card__detail">
-                Partnering with organizations across Australia &amp; internationally.
-              </p>
-              <p className="contact-info-card__subtext">
-                Services delivered on-site or via interactive live Zoom sessions.
-              </p>
-            </div>
-
             <div className="contact-faq">
               <h3 className="contact-faq__title">Frequently Asked Inquiries</h3>
               <div className="contact-faq__list">
@@ -346,6 +326,28 @@ const ContactSection = () => {
                     </div>
                   );
                 })}
+              </div>
+            </div>
+
+            <div className="contact-section__channels">
+              <div className="contact-info-card">
+                <h3 className="contact-info-card__title">Direct Email</h3>
+                <a className="contact-info-card__detail" href={`mailto:${EMAIL}`}>
+                  {EMAIL}
+                </a>
+                <p className="contact-info-card__subtext">
+                  Best for legal document submissions, formal RFPs, or direct inquiries.
+                </p>
+              </div>
+
+              <div className="contact-info-card">
+                <h3 className="contact-info-card__title">Service Areas</h3>
+                <p className="contact-info-card__detail">
+                  Partnering with organizations across Australia &amp; internationally.
+                </p>
+                <p className="contact-info-card__subtext">
+                  Services delivered on-site or via interactive live Zoom sessions.
+                </p>
               </div>
             </div>
           </aside>
