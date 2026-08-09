@@ -75,7 +75,11 @@ textarea {
 
 h1,
 h2,
-h3,
+h3 {
+  margin: 0;
+  text-wrap: pretty;
+}
+
 h4,
 p {
   margin: 0;
