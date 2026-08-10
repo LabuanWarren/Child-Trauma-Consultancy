@@ -1,12 +1,14 @@
 export const SITE_NAME = 'Child Trauma Consultancy';
 export const SITE_URL = 'https://childtraumaconsultancy.com';
+// Custom domain still serves WordPress (404 for this asset). Use the live Vercel origin until DNS cutover.
+export const ASSET_ORIGIN = 'https://child-trauma-consultancy.vercel.app';
 export const PHONE = '1300 299 500';
 export const EMAIL = 'info@childtraumaconsultancy.com';
 
 export const DEFAULT_DESCRIPTION =
   'Practical trauma-informed training and expert witness assessments for schools, community organisations, government agencies, and legal professionals across Australia and internationally.';
 
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/metadata-image.webp`;
+export const DEFAULT_OG_IMAGE = `${ASSET_ORIGIN}/metadata-image.webp`;
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;
 export const OG_IMAGE_ALT =
