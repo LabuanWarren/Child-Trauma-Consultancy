@@ -113,7 +113,7 @@ const TestimonialCard = ({ item }) => (
   <article className="quote-carousel__card">
     <blockquote className="quote-carousel__blockquote">
       {item.headline && (
-        <p className="quote-carousel__headline">&ldquo;{item.headline}&rdquo;</p>
+        <p className="quote-carousel__headline">{item.headline}</p>
       )}
       {item.quote && (
         <p className="quote-carousel__text">&ldquo;{item.quote}&rdquo;</p>
